@@ -1,0 +1,49 @@
+
+.footer {
+	position: absolute;
+	bottom: $page-margin;
+	left: $page-margin;
+
+	opacity: 0.4;
+
+	@media (max-width: $bp-medium) {
+		bottom: $page-margin-tablet-footer;
+		left: $page-margin-tablet;
+	}
+
+	.footer-logo {
+
+		left: $page-margin-footer;
+	}
+
+	p {
+		@include font-style-sm;
+		left: $page-margin-footer;
+		padding-bottom: 15px;
+		color: #b8b8b8;
+		&:last-child {
+			padding-bottom: 0px;
+		}
+	}
+
+	@media (max-width: $bp-small) {
+		display: none;
+	}
+
+	.mobile-nav & {
+		display: block;
+		width: 100%;
+		left: 0;
+		bottom: 0px;
+		top: auto;
+		padding: 20px;
+	}
+}
+
+.footer-logo {
+    width: 80px;
+    height: 45px;
+    display: block;
+    margin-bottom: 20px;
+}
+

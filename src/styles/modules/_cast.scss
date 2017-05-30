@@ -1,0 +1,214 @@
+
+$bp-horizontal: 1200px;
+
+@keyframes line-expand {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 80px;
+	}
+}
+
+@keyframes blur-in {
+	0% {
+		filter: blur(2px);
+		transform: scale(1.2);
+		opacity: 0;
+	}
+
+	100% {
+		filter: blur(0px);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+
+.cast {
+
+	.page-content {
+		overflow: auto;
+	}
+}
+
+
+.cast-section {
+	border: transparent;
+	display: flex;
+	margin-bottom: 40px;
+  justify-content: space-between;
+  @media (max-width: $bp-horizontal) {
+  	display: block;
+  }
+}
+
+.cast-spacer {
+	height: 30px;
+}
+
+.cast-heading {
+	@include font-style-h1;
+	color: $color-dark-text;
+	margin-bottom: 45px;
+}
+
+.cast-content {
+	/*
+	max-height: 70vh;
+	overflow: auto;
+	*/
+	padding-bottom: 300px;
+	padding-right: 20px;
+
+	@media (max-width: $bp-horizontal) {
+		overflow-x: visible;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+}
+
+.cast-item {
+	@include font-style-content-lg;
+	color: $color-text-light;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 16px;
+	overflow: hidden;
+	max-width: 100%;
+	@media (max-width: 1300px) {
+		font-size: 40px;
+	}
+	@media (max-width: $bp-horizontal) {
+		max-width: calc(100vw - 80px);
+		width: auto;
+	}
+	@media (max-width: $bp-medium) {
+		font-size: 25px;
+		color: $color-text-mobile-light;
+	}	
+}
+
+.cast-item__name {
+	line-height: 1;
+	white-space: nowrap;
+	//flex-shrink: 1;
+	@media (max-width: $bp-horizontal) {
+		margin-right: 10px;
+	}
+
+}
+
+.cast-connector {
+	width: 0px;
+	height: 1px;
+	background: $color-border;
+	animation: line-expand 0.5s forwards;
+	margin: 0px 20px;
+	@media (max-width: $bp-horizontal) {
+		display: none;
+	}
+}
+
+.cast-character {
+	opacity: 0;
+	@include font-style-content-md;
+	animation: blur-in 0.6s linear forwards;
+	transform-origin: 50% 50%;
+	flex-grow: 1;
+}
+
+.cast-scroll-container {
+	background-color: transparent;
+	border-top: 0px;
+	flex: 0 0 calc(100% - 300px);
+	/*
+	flex: 0 0 800px;
+
+	@media (max-width: 1300px) {
+		flex: 0 0 500px;
+	}
+	*/
+	@media (max-width: $bp-horizontal) {
+		max-height: 300px;
+	}
+	&:before {
+		//width: 100%;
+		height: 30px;
+		background: #FDFDFD;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 5px;
+		z-index: 200;
+		background: linear-gradient(to bottom, rgba(253,253,253,1) 0%,rgba(253,253,253,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+	}
+}
+
+.cast-scrollbar {
+
+	background: $color-text;
+}
+
+.cast-scrolltrack {
+	background: rgba(#000, 0.0);
+	width: 4px;
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+
+.cast-arrows {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-left: 17.5%;
+}
+
+.cast-arrow-next,
+.cast-arrow-prev {
+	position: static;
+	left: 100%;
+	background: none;
+	overflow: hidden;
+	border: none;
+	z-index: 100;
+	outline: none;
+	cursor: pointer;
+	font-size: 40px;
+	top: 190px;
+	color: #AAA;
+	&.slick-disabled {
+		opacity: 0.1;
+		cursor: default;
+	}
+
+}
+
+.cast-arrow-prev {
+	left: 0px;
+	&:before {
+		@include fa-icon;
+		content: $fa-var-angle-left;
+	}
+}
+
+
+.cast-arrow-next {
+	left: 125px;
+	&:before {
+		@include fa-icon;
+		content: $fa-var-angle-right;
+	}
+
+}
+
+

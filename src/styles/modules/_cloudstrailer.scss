@@ -1,0 +1,232 @@
+
+@keyframes flowtrailer-l {
+	0% {
+		transform: translate(0, 0)
+	}
+
+	20% {
+		transform: translate(20vw, 3px)
+	}
+
+	40% {
+		transform: translate(40vw, -3px)
+	}
+
+	60% {
+		transform: translate(60vw, 3px)
+	}
+
+	80% {
+		transform: translate(80vw, -3px)
+	}
+
+	100% {
+		
+	}
+
+}
+
+
+@keyframes flowtrailer- {
+	0% {
+		transform: translate(0, 0)
+	}
+
+	20% {
+		transform: translate(20vw, 3px)
+	}
+
+	40% {
+		transform: translate(40vw, -3px)
+	}
+
+	60% {
+		transform: translate(60vw, 3px)
+	}
+
+	80% {
+		transform: translate(80vw, -3px)
+	}
+
+	100% {
+		transform: translate(100vw, -3px)
+	}
+
+}
+
+
+@keyframes cloudtrailer-expand {
+	0% {
+		transform: scale(40);
+		opacity: 0.4;
+	}
+	10% {
+		transform: scale(50);
+		opacity: 0.4;
+	}
+	20% {
+		transform: scale(60);
+		opacity: 0.4;
+	}
+	30% {
+		transform: scale(70);
+		opacity: 0.6;
+	}
+	
+	40% {
+		transform: scale(70);
+		opacity: 0.7;
+	}
+	60% {
+		transform: scale(80);
+		opacity: 0.4;
+	}
+
+
+	80% {
+		transform: scale(90);
+		opacity: 0.2;
+	}
+
+	100% {
+		transform: scale(100);
+		opacity: 0;
+		
+	}
+
+}
+
+
+
+@keyframes cloud-load {
+	0% {
+	
+		opacity: 0;
+	}
+    10% {
+	
+		opacity: 0;
+	}
+
+	20% {
+		
+		opacity: 0;
+	}
+	30% {
+		
+		opacity: 0;
+	}
+	
+	40% {
+		
+		opacity: 0.4;
+	}
+	50% {
+		
+		opacity: 0.5;
+	}
+	60% {
+		
+		opacity: 0.6;
+	}
+	70% {
+		
+		opacity: 0.7;
+	}
+
+
+	80% {
+	
+		opacity: 0.8;
+	}
+	90% {
+	
+		opacity: 0.9;
+	}
+
+	100% {
+
+		opacity: 1;
+		
+	}
+
+}
+
+
+
+
+.cloudtrailer-bg {
+	 display : none;
+
+	
+
+}
+
+.cloudstrailer {
+	 display : none;
+	
+}
+
+
+.cloudtrailer-wrapper {
+	 display : none;
+}
+
+.cloudtrailer {
+
+ display : none;
+}
+
+
+
+
+
+.cloudtrailer-1 {
+ display : none;
+
+  
+}
+
+
+
+
+
+.cloudtrailer-2 {
+   display : none;
+
+}
+
+
+
+
+.cloudtrailer-3 {
+	 display : none;
+
+
+
+}
+
+
+.cloudtrailer-4 {
+   display : none;
+	
+}
+
+.cloudtrailer-5 {
+    display : none;
+
+  
+
+}
+
+.cloudtrailer-6 {
+ 	 display : none;
+	
+}
+
+
+
+
+.cloudtrailer-bottom {
+	 display : none;
+}

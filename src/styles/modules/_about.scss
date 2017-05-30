@@ -1,0 +1,42 @@
+.about {
+	.page-content {
+		
+		position: relative;
+		//display: flex;
+		justify-content: space-between;
+
+		@media (max-width: $bp-medium) {
+		color: $color-text-mobile-light;
+		margin-left: 5%;
+	}
+
+	@media (max-width: $bp-desktop) {
+		color: $color-text-mobile-light;
+		margin-left: 5%;
+	}
+	}
+
+
+}
+
+.about-heading {
+	flex: 0 0 270px;
+	@include font-style-h1;
+	color: $color-dark-text;
+	margin-bottom: 30px;
+}
+
+.about-content {
+
+	@include font-style-content-lg;
+	color: $color-text-light;
+	max-width: 920px;
+	.text-disperse-char {
+		display: inline;
+	}
+
+	@media (max-width: $bp-medium) {
+		color: $color-text-mobile-light;
+	}
+
+}

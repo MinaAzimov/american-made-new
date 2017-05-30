@@ -1,0 +1,139 @@
+
+
+
+@keyframes wobble-vertical {
+	16.65% {
+		transform: translateY(8px);
+	}
+
+	33.3% {
+		transform: translateY(-6px);
+	}
+
+	49.95% {
+		transform: translateY(4px);
+	}
+
+	66.6% {
+		transform: translateY(-2px);
+	}
+
+	83.25% {
+		transform: translateY(1px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.home-content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column
+}
+
+
+
+
+
+.home-title {
+	color: #18304D;
+	font-family: $font-title;
+	@include font-style-h1;
+	font-size: 80px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 26px;
+	@media (max-width: 900px) {
+		font-size: 60px;
+		margin-bottom: 15px;
+	}
+	@media (max-width: $bp-small) {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+
+}
+
+.home-date {
+	color: #18304D;
+	font-family: $font-title;
+	@include font-style-h1;
+	font-size: 28px;
+	text-align: center;
+	@media (max-width: $bp-small) {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+}
+
+
+@keyframes home-line-grow {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: 80px;
+	}
+}
+.home-bottom {
+	position: absolute;
+	top: 65vh;
+	left: 50%;
+	transform: translateX(-50%);
+ 	z-index: 200;
+ 	opacity: 0;	
+ 	filter: blur(3px);
+ 	transition: opacity 0.5s, blur 0.5s;
+ 	.page-- & {
+ 		opacity: 1;
+ 		filter: blur(0px);
+ 	}
+}
+
+.home-separator {
+	width: 1px;
+	height: 0px;
+	background: $color-border;
+	margin: 0 auto 40px auto;
+	transition: height 1s 3s linear;
+	.home--entered & {
+		height: 90px;	
+	}
+}
+
+.home-arrow {
+	margin: 0px auto;
+	border: 1px solid $color-border;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	color: $color-border;
+	position: relative;
+	z-index: 300;
+	opacity: 0;
+	transform: scale(1.2) translateY(-20px);
+	animation: wobble-vertical 1.2s 4.7s infinite;
+	transition: opacity 0.5s 4s, transform 0.6s 4s;
+	i:before {
+			font-size: 18px;
+			display: block;
+			text-align: center;
+			line-height: 30px;
+	}
+
+	.home--entered & {
+		opacity: 1;
+		transform: scale(1) translateY(0px);
+	}
+
+
+}

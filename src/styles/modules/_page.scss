@@ -1,0 +1,567 @@
+
+.page {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100%;
+	height: 100%;
+	background: url(../img/ground-bg.png);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	@media (max-width: $bp-medium) {
+		background-image: url(../img/mobile-bg.jpg);
+	}
+}
+
+
+.alex-wrapper-true {
+transition: opacity 3s ease;
+
+    
+}
+
+          button.iframetrue#closeButton{
+                  border: 1px solid #f4f1ee;
+                  background-image: -webkit-linear-gradient(to top,  #fff, #f4f1ee);
+                  background-image: linear-gradient(to top,  #fff, #f4f1ee);
+                  border-radius: 50%;
+                  z-index: 10000023;
+                  opacity: 1;
+                 
+                  height: 40px;
+                  margin: 4vh 0px 0px 92%;
+                  position: relative;
+                  width: 40px; 
+                  outline: none;
+                  opacity: 0.8;     
+                  -webkit-transition: all  1.1s ;
+                  -o-transition: all  1.1s ;
+                  -moz-transition:  all  1.1s ;
+                  transition: all  1.1s ;
+                  -o-transition-delay: .5s;
+                  -moz-transition-delay: .5s;
+                  transition-delay: .5s;
+                  -webkit-transition-delay: .5s;  
+                  cursor: pointer;
+          
+                  
+                 
+            }
+
+             button.iframetrue#closeButton:after{
+                  color: #18304D;
+                  content: "";
+                  display: block;
+                  font-size: 28px;
+                  height: 35px;
+                  text-decoration: none;
+                  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+                  position: absolute;
+                  width: 7px;
+                  content: "✖";
+                  left: 8.3px;
+                  top: 2.5px;
+
+
+            }
+
+            button.iframetrue#closeButton:hover{
+                  background-image: -webkit-linear-gradient(to top, #fff, #f4f1ee);
+                  background-image: linear-gradient(to top, #fff, #f4f1ee);
+                  color:#0088cc;
+                 
+            }
+
+                 .largeframe-wrapper #closeButton:hover:after{
+                  color:#18304D;
+                  
+            }
+
+             button.iframetrue#closeButton:active{
+                  background-image: -webkit-linear-gradient(to top, #efedec, #f7f4f4);
+                  background-image: linear-gradient(to top, #efedec, #f7f4f4);
+                  box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+            }
+
+             button.iframetrue#closeButton:active:after{
+                  color:#dbd2d2;
+                  text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+            }
+
+
+
+            
+                   button.iframetrue#playButton {
+                  border: 1px solid #f4f1ee;
+                  background-image: -webkit-linear-gradient(to top,  #fff, #f4f1ee);
+                  background-image: linear-gradient(to top,  #fff, #f4f1ee);
+                  border-radius: 50%;
+                  z-index: 10000023;
+                  height: 40px;
+                  margin: 15% 0px 0px 2%;
+                  position: relative;
+                  width: 40px;                  
+                  outline: none;
+                  opacity: 0.8;     
+                  -webkit-transition: all  1.1s ;
+                  -o-transition: all  1.1s ;
+                  -moz-transition:  all  1.1s ;
+                  transition: all  1.1s ;
+                  -o-transition-delay: .6s;
+                  -moz-transition-delay: .6s;
+                  transition-delay: .6s;
+                  -webkit-transition-delay: .6s;
+                  cursor: pointer;
+          
+            }
+
+           button.iframetrue#playButton:after{
+                  color: #18304D;
+                  content: "";
+                  display: block;
+                  font-size: 28px;
+                  height: 35px;
+                  text-decoration: none;
+                  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+                  position: absolute;
+                  width: 7px;
+                  content: "►";
+                  left: 9px;
+                  top: 3px;
+
+            }
+
+        button.iframetrue#playButton:hover{
+                  background-image: -webkit-linear-gradient(to top, #fff, #f4f1ee);
+                  background-image: linear-gradient(to top, #fff, #f4f1ee);
+                  color:#0088cc;
+               
+            }
+
+                 button.iframetrue#playButton:hover:after{
+                  color:#18304D;
+                  
+            }
+
+            button.iframetrue#playButton:active{
+                  background-image: -webkit-linear-gradient(to top, #efedec, #f7f4f4);
+                  background-image: linear-gradient(to top, #efedec, #f7f4f4);
+                  box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+            }
+
+           button.iframetrue#closeButton:active:after{
+                  color:#dbd2d2;
+                  text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+            }
+
+
+
+                   button.iframetrue#stopButton {
+                  border: 1px solid #f4f1ee;
+                  background-image: -webkit-linear-gradient(to top,  #fff, #f4f1ee);
+                  background-image: linear-gradient(to top,  #fff, #f4f1ee);
+                  border-radius: 50%;
+                  z-index: 10000023;
+                  height: 40px;
+                  margin: 2% 0px 0px 2%;
+                  position: relative;
+                  width: 40px;                  
+                  outline: none;    
+                  opacity: 0.8;     
+                  -webkit-transition: all  1.1s ;
+                  -o-transition: all  1.1s ;
+                  -moz-transition:  all  1.1s ;
+                  transition: all  1.1s ;
+                  -o-transition-delay: .7s;
+                  -moz-transition-delay: .7s;
+                  transition-delay: .7s;
+                  -webkit-transition-delay: .7s; 
+                  cursor: pointer;
+     
+            }
+
+           button.iframetrue#stopButton:after{
+                  color: #18304D;
+                  content: "";
+                  display: block;
+                  font-size: 28px;
+                  height: 35px;
+                  text-decoration: none;
+                  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+                  position: absolute;
+                  width: 7px;
+                  content: "❚❚";
+                  left: 7.3px;
+                  top: 2.3px;
+
+            }
+
+          button.iframetrue#stopButton:hover{
+                  background-image: -webkit-linear-gradient(to top, #fff, #f4f1ee);
+                  background-image: linear-gradient(to top, #fff, #f4f1ee);
+                  color:#0088cc;
+                  outline: none;
+               
+            }
+
+               button.iframetrue#stopButton:hover:after{
+                  color:#18304D;
+                  outline: none;
+                  
+            }
+
+            button.iframetrue#stopButton:active{
+                  background-image: -webkit-linear-gradient(to top, #efedec, #f7f4f4);
+                  background-image: linear-gradient(to top, #efedec, #f7f4f4);
+                  box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+                  outline: none;
+            }
+
+           button.iframetrue#stopButton:active:after{
+                  color:#dbd2d2;
+                  text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+                  outline: none;
+            }
+
+              button.iframetrue#muteButton {
+                  border: 1px solid #f4f1ee;
+                  background-image: -webkit-linear-gradient(to top,  #fff, #f4f1ee);
+                  background-image: linear-gradient(to top,  #fff, #f4f1ee);
+                  border-radius: 50%;
+                  z-index: 10000023;
+                  opacity: 1;
+                  height: 40px;
+                  margin: 2% 0px 0px 2%;
+                  position: relative;
+                  width: 40px;      
+                  opacity: 0.8;     
+                  -webkit-transition: all  1.1s ;
+                  -o-transition: all  1.1s ;
+                  -moz-transition:  all  1.1s ;
+                  transition: all  1.1s ;
+                  -o-transition-delay: .8s;
+                  -moz-transition-delay: .8s;
+                  transition-delay: .8s;
+                  -webkit-transition-delay: .8s; 
+                  cursor: pointer;
+              
+                 
+                 
+                  outline: none;    
+            }
+
+           button.iframetrue#muteButton:after{
+                  color: #18304D;
+                  content: "";
+                  display: block;
+                  font-size: 28px;
+                  height: 35px;
+                  text-decoration: none;
+                  text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+                  position: absolute;
+                  width: 7px;
+                  content: "♪";
+                  left: 7px;
+                  top: 0.5px;
+
+            }
+
+          button.iframetrue#muteButton:hover{
+                  background-image: -webkit-linear-gradient(to top, #fff, #f4f1ee);
+                  background-image: linear-gradient(to top, #fff, #f4f1ee);
+                  color:#0088cc;
+               
+            }
+
+                 button.iframetrue#muteButton:hover:after{
+                  color:#18304D;
+                  
+            }
+
+            button.iframetrue#muteButton:active{
+                  background-image: -webkit-linear-gradient(to top, #efedec, #f7f4f4);
+                  background-image: linear-gradient(to top, #efedec, #f7f4f4);
+                  box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+            }
+
+           button.iframetrue#muteButton:active:after{
+                  color:#dbd2d2;
+                  text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+            }
+
+           
+  
+  
+
+           
+  
+.largeframe-wrapper {
+
+ 
+      
+      
+ 
+     
+      @media (max-width: $bp-medium) {
+            left: $page-margin-tablet;
+      }
+
+      @media (max-width: $bp-small) {
+            display: none;
+      }
+
+      display: flex;
+      flex-direction: column;
+     
+
+            button.iframefalse {
+                  position: absolute;
+                  opacity: 0;
+
+
+
+            }
+}
+
+
+.specialbuttontrue {
+      display: none;
+      z-index: 1500;
+      position: absolute;
+      bottom: $page-margin;
+      right: $page-margin;
+      opacity: 0;
+      @media (max-width: $bp-medium) {
+            bottom: $page-margin-tablet-footer;
+            left: $page-margin-tablet;
+      }
+
+
+}
+
+
+
+.specialbuttonfalse {
+
+            button{
+                  height: 100%;
+                  width: 100%;
+                  position: absolute;
+                  opacity: 0;
+            }
+
+            iframe {
+                  border: 5px solid white;
+                  
+            }
+
+      opacity: 1;
+      z-index: 30;
+      position: absolute;
+      bottom: $page-margin;
+      right: $page-margin;
+      opacity: 0.9;
+      @media (max-width: $bp-medium) {
+            bottom: $page-margin-tablet-footer;
+            left: $page-margin-tablet;
+      }
+      
+
+}
+
+.specialbuttonfalse button:hover {
+  cursor: pointer;
+
+
+}
+
+
+iframe.iframetrue {
+      display:block;
+      z-index: 1000000;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: right 1s;
+     -moz-transition: right 1s;
+     transition: right 1s;  
+}
+
+.iframe-small-button {
+      z-index: 10000000;
+      height: 100%;
+      margin-right: 500px;
+
+}
+
+iframe.iframefalse {
+      z-index: 100;
+      position: absolute;
+      top: 0;
+      right: -3000px;
+      width: 100%;
+      height: 100%;
+}
+
+
+
+.page--trailer {
+	width: 100%;
+	height: 100%;
+	background: white;
+	
+	overflow: hidden;
+	
+}
+
+
+.page-true {
+
+	.nav {
+		opacity: 0;
+      }
+
+      span {
+
+      		.page-wrapper {
+      			.home.home--entered {
+      				.main-content__wrapper {
+      					.main-content {
+      						.home-date {
+      							display: none;
+      						}
+      					}
+      				}
+      			}
+      		}
+		
+      }
+
+      span {
+
+      		.page-wrapper {
+      			.home.home--entered {
+      				.main-content__wrapper {
+      					.main-content {
+      						.text {
+      							display: none;
+      						}
+      					}
+      				}
+      			}
+      		}
+		
+      }
+
+      span {
+
+      		.page-wrapper {
+      			.home.home--entered {
+      				.home-bottom {
+      					.home-separator {
+      						
+      							display: none;
+      						
+      					}
+      				}
+      			}
+      		}
+		
+      }
+
+       span {
+
+      		.page-wrapper {
+      			.home.home--entered {
+      				.home-bottom {
+      					.home-arrow {
+      						
+      							display: none;
+      						
+      					}
+      				}
+      			}
+      		}
+		
+      }	
+
+      .cloud-bg {
+		opacity: 0;
+      }
+
+      .mobile-nav {
+		opacity: 0;
+      }
+
+      .footer {
+		opacity: 0;
+      }
+
+		.cloud-wrapper img {
+			opacity: 0;
+		}
+
+      .cloud-wrapper {
+      	.cloud.cloud-1 {
+		opacity: 0;
+      }
+	}
+
+      .cloud-wrapper {.cloud.cloud-2 {
+		opacity: 0;
+      }
+	}
+
+      .cloud-wrapper {.cloud.cloud-3 {
+		opacity: 0;
+      }
+	}
+      .cloud-wrapper {.cloud.cloud-4 {
+		opacity: 0;
+      }
+	}
+
+      .cloud-wrapper {.cloud.cloud-5 {
+		opacity: 0;
+      }
+	}
+
+      .cloud-wrapper {.cloud.cloud-6 {
+		opacity: 0;
+      }
+	}
+}
+
+.page-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page-content {
+	max-width: $max-page-width;
+	margin: 0px auto;
+	padding: 30vh (2*$page-margin) 0px (2*$page-margin);
+	position: relative;
+	box-sizing: content-box;
+
+	@media (max-width: $bp-medium) {
+		padding: 30vh 80px 0px 80px;
+	}
+
+	@media (max-width: $bp-small) {
+		padding: 20vh $page-margin-tablet 0px $page-margin-tablet;
+	}
+}
+
+
+.page-content-heading {
+	flex: 0 0 270px;
+	@include font-style-h1;
+	color: $color-dark-text;
+	margin-bottom: 30px;
+}

@@ -1,0 +1,160 @@
+
+
+@keyframes figure-fade-in {
+	0% {
+		opacity: 0;
+		transform: scale(1.2);
+		filter: blur(3px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+		filter: blur(0px);		
+	}
+}
+
+@keyframes sepearator-draw {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+.coming-soon {
+	.page-content-heading {
+		margin-bottom: 120px;
+		@media (max-width: $bp-medium) {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+
+
+.countdown-container {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+
+.countdown-figure {
+	flex: 0 0 140px;
+	display: flex;
+	align-items: baseline;
+	opacity: 0;
+	animation: figure-fade-in 1s forwards;
+	transform-origin: 50% 50%;
+
+	@media (max-width: $bp-desktop) {
+		flex: 0 0 auto;
+	}
+
+	@media (max-width: $bp-medium) {
+		flex: 0 0 50%;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	//transform: translateZ(20px);
+}
+
+
+
+.countdown-separator {
+	height: 1px;
+	flex-grow: 1;
+	position: relative;
+	margin: 0px 30px;
+	&:before {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $color-border;
+		width: 0%;
+		height: 1px;
+
+		animation: sepearator-draw 0.6s linear forwards;
+		animation-delay: inherit;
+	}
+
+
+	@media (max-width: $bp-desktop) {
+		margin: 0px 15px;
+	}
+
+	@media (max-width: $bp-medium) {
+		display: none;
+	}
+
+
+}
+
+
+.countdown-digit {
+	color: $color-text-light;
+	font-weight: 700;
+	font-size: 80px;
+	@media (max-width: $bp-desktop) {
+		font-size: 60px;
+	}
+
+	@media (max-width: $bp-medium) {
+		color: $color-text-mobile-light;
+	}
+}
+
+.countdown-label {
+	margin-left: 15px;
+
+	@media (max-width: $bp-medium) {
+		color: $color-text-mobile-light;
+	}
+	
+}
+
+
+
+$stagger-delay: 0.6s;
+$stagger-timeout: 0.8s;
+$stagger-line-offset: 0.3s;
+
+
+.countdown-figure:nth-of-type(1) {
+	animation-delay: $stagger-delay;
+}
+
+.countdown-separator:nth-of-type(2) {
+	animation-delay: $stagger-delay + $stagger-line-offset;
+}
+
+.countdown-figure:nth-of-type(3) {
+	animation-delay: $stagger-delay + ($stagger-timeout);
+}
+
+.countdown-separator:nth-of-type(4) {
+	animation-delay: $stagger-delay + ($stagger-timeout) + $stagger-line-offset;
+}
+
+.countdown-figure:nth-of-type(5) {
+	animation-delay: $stagger-delay + (2*$stagger-timeout);
+}
+
+.countdown-separator:nth-of-type(6) {
+	animation-delay: $stagger-delay + (2*$stagger-timeout) + $stagger-line-offset;
+}
+
+.countdown-figure:nth-of-type(7) {
+	animation-delay: $stagger-delay + (3*$stagger-timeout);
+}
+
+

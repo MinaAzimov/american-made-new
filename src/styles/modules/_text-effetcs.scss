@@ -1,0 +1,194 @@
+
+
+.text-disperse-char,
+.text-disperse-char-blank {
+	display: inline-block;
+	transition: transform 2s linear, filter 2s ease-in, opacity 0.6s linear;
+	transform-origin: 50% 50%;
+
+}
+
+.text-disperse-char-blank {
+	&:before {
+		content: "\00a0 ";
+
+	}
+}
+
+
+  
+  .text {
+	
+    color: #18304D;
+	font-family: $font-title;
+  	text-shadow: 0 0 80px rgba(27,59,93,0.1);
+	  background: url(../img/airplane1.svg) repeat-y;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: rgba(27,59,93,0.5);
+	  -webkit-animation: aitf 6s linear forwards, opacitykey 15s linear forwards;
+	  -webkit-transform: translate3d(0,0,0);
+	
+  }
+
+@-webkit-keyframes aitf {
+	0% {
+    background-position:  -1000 5,  100% 5, -30540px 45800px ;
+    
+  }
+  100% {
+    background-position:   1000% 5,  -1000% 5;
+  }
+ 
+  
+}
+
+@-webkit-keyframes opacitykey {
+	0% {
+		
+		
+
+		text-shadow: 0 0 80px rgba(27,59,93,0);
+   		opacity: 0.5;
+	}
+
+
+
+	50% {
+		opacity: 0.5;
+		text-shadow: -1px 0 #18304D, 0 1px #18304D, 1px 0 #18304D, 0 -1px #18304D;
+		
+	}
+
+	
+	75% {
+		opacity: 1;
+
+	   text-shadow: -1px 0 #18304D, 0 1px #18304D, 1px 0 #18304D, 0 -1px #18304D;
+		
+	}
+
+	100% {
+		
+		text-shadow: 0 0 80px rgba(27,59,93,0);
+   		opacity: 0.7;
+		
+	}
+}
+
+
+
+
+.text-effect-blur {
+	
+	
+	webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	perspective: 1000px;
+	transform-origin: 50% 50%;
+
+
+	.text-disperse-char,
+	.text-disperse-char-blank {
+		transform: translateZ(0px) rotateY(0deg);
+		filter: blur(0px);
+		opacity: 1
+	}
+
+	&.text-effect--active {
+		.text-disperse-char,
+		.text-disperse-char-blank {
+			transform: translateZ(140px) rotateY(0deg) ;
+			filter: blur(1px);
+			opacity: 0;
+		}
+	}
+
+}
+
+
+.text-effect-blur-ring {
+
+	.text-disperse-char,
+	.text-disperse-char-blank {
+
+
+		
+		transition: transform 3s linear, opacity 0.6s linear;
+		transform: rotateY(0deg) translateZ(0px);
+		filter: none;
+		opacity: 1
+	}
+
+	&.text-effect--active {
+		.text-disperse-char,
+		.text-disperse-char-blank {
+			transform: rotateY(180deg) translateZ(240px);
+			filter: blur(3px);
+			opacity: 0;
+		}
+	}
+}
+
+
+
+.text-effect-type {
+
+
+	.text-disperse-char,
+	.text-disperse-char-blank {
+		transition: opacity 0.6s, filter 1s;
+		filter: blur(0px);
+		opacity: 1
+	}
+
+	&.text-effect--active {
+		.text-disperse-char,
+		.text-disperse-char-blank {
+			filter: blur(3px);
+			opacity: 0;
+		}
+	}	
+}
+
+
+
+.text-effect-blur-big {
+
+	.text-disperse-char,
+	.text-disperse-char-blank {
+		transform: none;
+		filter: none;
+		opacity: 1
+	}
+
+	&.text-effect--active {
+		.text-disperse-char,
+		.text-disperse-char-blank {
+			transform: scale(4);
+			filter: blur(3px);
+			opacity: 0;
+		}
+	}
+}
+
+
+.text-effect-spitfire {
+	.text-disperse-char,
+	.text-disperse-char-blank {
+		transition: transform 1s, opacity 0.6s, filter 1s;
+		transform: scale(1) translateZ(0px);
+		filter: blur(0px);
+		opacity: 1;
+		font-size: 25px;
+	}
+
+	&.text-effect--active {
+		.text-disperse-char,
+		.text-disperse-char-blank {
+			transform: scale(1.5) translateZ(400px);
+			filter: blur(3px);
+			opacity: 0;
+		}
+	}		
+}

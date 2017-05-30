@@ -1,0 +1,37 @@
+
+
+.cloud-bottom {
+	z-index: 3;
+}
+
+.cloud {
+	z-index: 5;
+	&.cloud-4,
+	&.cloud-5 {
+		z-index: 50;
+	}
+}
+
+.page-content {
+	z-index: 7;
+}
+
+.nav {
+	z-index: 150;
+}
+
+.footer {
+	z-index: 150;
+}
+
+.mobile-nav__menu {
+	z-index: 300;
+}
+
+.mobile-nav__trigger {
+	z-index: 400;
+}
+
+.mobile-nav .footer {
+	z-index: 400;
+}

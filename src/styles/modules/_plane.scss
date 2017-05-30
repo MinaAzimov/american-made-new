@@ -1,0 +1,44 @@
+.scene{position:relative;
+  display:block; 
+  margin:0 auto; 
+  width:300px;
+  height:200px; 
+}
+
+
+/*plane animation*/
+.plane{ 
+  animation-duration: 1s;
+  animation-name: anim-plane;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function:linear;
+  
+  animation-fill-mode:forwards;    
+  display:block;
+  margin:0 auto;
+  transform: translateY(80px);
+  left:30%;
+}
+
+@keyframes anim-plane{ 
+  to{
+    transform:translateY(95px);
+  }    
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+.whoami{
+  padding-top:3em;
+  text-align:center;  
+}
