@@ -40,12 +40,15 @@ export default class About extends Component {
 						<div className="main-content">
 							<div className="page-content">
 								<div className="about-heading">
-									Based on a true lie
+
+									It's not a felony if you're doing it for the good guys.
+									
 								</div>
 								<div className="about-content">
 
-									<TextDisperse className="text-effect-type" isRandom={false} isActive={animationStep==="intro-start"} text="American Made tells the story of Barry Seal, 
-										a TWA pilot who is recruited by the CIA to help counter the emerging communist threat in Central America."
+									<TextDisperse className="text-effect-type" isRandom={false} isActive={animationStep==="intro-start"} 
+									text="American Made tells the story of Barry Seal, a TWA pilot who is recruited by the CIA
+									 to help counter the emerging communist threat in Central America."
 									/> 
 								</div>
 							</div>

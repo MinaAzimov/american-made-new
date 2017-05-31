@@ -317,7 +317,7 @@ class Cast extends Component {
 					<div className="main-content__wrapper">
 						<div className="main-content">
 							<div className="page-content">
-								<div className="cast-section">
+								<div className="about-section">
 									<div className="cast-heading">
 										Cast & Crew
 									</div>

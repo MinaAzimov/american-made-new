@@ -7,7 +7,7 @@ $bp-horizontal: 1200px;
 	}
 
 	100% {
-		width: 80px;
+		width: 220px;
 	}
 }
 
@@ -49,9 +49,14 @@ $bp-horizontal: 1200px;
 }
 
 .cast-heading {
-	@include font-style-h1;
-	color: $color-dark-text;
-	margin-bottom: 45px;
+	flex: 0 0 270px;
+	font-weight: italic;
+	font-size: 34px;
+	color: #274D6D;
+	margin-bottom: 30px;
+	@include font-style-content-lg;
+	font-weight: 600;
+	opacity: 0.6;
 }
 
 .cast-content {
@@ -80,6 +85,11 @@ $bp-horizontal: 1200px;
 	margin-bottom: 16px;
 	overflow: hidden;
 	max-width: 100%;
+	
+	font-size: 37px;
+	color: #274D6D;
+	font-weight: 500;
+	opacity: 0.9;
 	@media (max-width: 1300px) {
 		font-size: 40px;
 	}
@@ -89,7 +99,7 @@ $bp-horizontal: 1200px;
 	}
 	@media (max-width: $bp-medium) {
 		font-size: 25px;
-		color: $color-text-mobile-light;
+		color: #274D6D;
 	}	
 }
 
@@ -106,9 +116,10 @@ $bp-horizontal: 1200px;
 .cast-connector {
 	width: 0px;
 	height: 1px;
-	background: $color-border;
+	background: #274D6D;
 	animation: line-expand 0.5s forwards;
 	margin: 0px 20px;
+	
 	@media (max-width: $bp-horizontal) {
 		display: none;
 	}
@@ -120,6 +131,8 @@ $bp-horizontal: 1200px;
 	animation: blur-in 0.6s linear forwards;
 	transform-origin: 50% 50%;
 	flex-grow: 1;
+	font-size: 19px;
+	line-height: 2;
 }
 
 .cast-scroll-container {
@@ -153,7 +166,7 @@ $bp-horizontal: 1200px;
 
 .cast-scrollbar {
 
-	background: $color-text;
+	background: #274D6D;
 }
 
 .cast-scrolltrack {
@@ -171,6 +184,7 @@ $bp-horizontal: 1200px;
 	justify-content: space-between;
 	margin-top: 40px;
 	margin-left: 17.5%;
+
 }
 
 .cast-arrow-next,
@@ -185,7 +199,7 @@ $bp-horizontal: 1200px;
 	cursor: pointer;
 	font-size: 40px;
 	top: 190px;
-	color: #AAA;
+	color: #274D6D;
 	&.slick-disabled {
 		opacity: 0.1;
 		cursor: default;

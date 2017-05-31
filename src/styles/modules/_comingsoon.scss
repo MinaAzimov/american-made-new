@@ -26,6 +26,15 @@
 
 .coming-soon {
 	.page-content-heading {
+
+		flex: 0 0 270px;
+	font-weight: italic;
+	font-size: 34px;
+	color: #274D6D;
+	margin-bottom: 30px;
+	@include font-style-content-lg;
+	font-weight: 600;
+	opacity: 0.6;
 		margin-bottom: 120px;
 		@media (max-width: $bp-medium) {
 			margin-bottom: 60px;
@@ -79,7 +88,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: $color-border;
+		background: #274D6D;
 		width: 0%;
 		height: 1px;
 
@@ -104,20 +113,23 @@
 	color: $color-text-light;
 	font-weight: 700;
 	font-size: 80px;
+	color: #274D6D;
+	font-weight: 700;
+	opacity: 0.5;
 	@media (max-width: $bp-desktop) {
 		font-size: 60px;
 	}
 
 	@media (max-width: $bp-medium) {
-		color: $color-text-mobile-light;
+		color: #274D6D;
 	}
 }
 
 .countdown-label {
 	margin-left: 15px;
-
+	color: #274D6D;
 	@media (max-width: $bp-medium) {
-		color: $color-text-mobile-light;
+		color: #274D6D;
 	}
 	
 }

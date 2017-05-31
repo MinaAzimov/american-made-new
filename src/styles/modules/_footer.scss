@@ -3,7 +3,7 @@
 	position: absolute;
 	bottom: $page-margin;
 	left: $page-margin;
-
+	
 	opacity: 0.4;
 
 	@media (max-width: $bp-medium) {
@@ -20,7 +20,8 @@
 		@include font-style-sm;
 		left: $page-margin-footer;
 		padding-bottom: 15px;
-		color: #b8b8b8;
+		margin-bottom: -5px;
+		color: #274D6D;
 		&:last-child {
 			padding-bottom: 0px;
 		}

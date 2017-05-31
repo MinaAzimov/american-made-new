@@ -19,24 +19,24 @@
   
   .text {
 	
-    color: #18304D;
-	font-family: $font-title;
-  	text-shadow: 0 0 80px rgba(27,59,93,0.1);
+    color: #8A1C12;
+	font-family: 'American Made Logotype';
+  	text-shadow: 0 0 80px rgba(138, 28, 18, 0.1);
 	  background: url(../img/airplane1.svg) repeat-y;
 	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: rgba(27,59,93,0.5);
-	  -webkit-animation: aitf 6s linear forwards, opacitykey 15s linear forwards;
+	  -webkit-text-fill-color: rgba(138, 28, 18, 0.6);
+	  -webkit-animation: aitf 12s linear forwards, opacitykey 12s linear forwards;
 	  -webkit-transform: translate3d(0,0,0);
 	
   }
 
 @-webkit-keyframes aitf {
 	0% {
-    background-position:  -1000 5,  100% 5, -30540px 45800px ;
+    background-position:  -1000 1,  100% 1, -30540px 45800px ;
     
   }
   100% {
-    background-position:   1000% 5,  -1000% 5;
+    background-position:   1200% 1,  -1200% 1;
   }
  
   
@@ -47,30 +47,30 @@
 		
 		
 
-		text-shadow: 0 0 80px rgba(27,59,93,0);
-   		opacity: 0.5;
+		
+   		opacity: 0;
 	}
 
 
 
 	50% {
 		opacity: 0.5;
-		text-shadow: -1px 0 #18304D, 0 1px #18304D, 1px 0 #18304D, 0 -1px #18304D;
+		
 		
 	}
 
 	
 	75% {
-		opacity: 1;
+		opacity: 0.7;
 
-	   text-shadow: -1px 0 #18304D, 0 1px #18304D, 1px 0 #18304D, 0 -1px #18304D;
+
 		
 	}
 
 	100% {
 		
-		text-shadow: 0 0 80px rgba(27,59,93,0);
-   		opacity: 0.7;
+	
+   		opacity: 1;
 		
 	}
 }

@@ -21,9 +21,13 @@
 
 .about-heading {
 	flex: 0 0 270px;
-	@include font-style-h1;
-	color: $color-dark-text;
+	font-weight: italic;
+	font-size: 34px;
+	color: #274D6D;
 	margin-bottom: 30px;
+	@include font-style-content-lg;
+	font-weight: 600;
+	opacity: 0.6;
 }
 
 .about-content {
@@ -31,12 +35,16 @@
 	@include font-style-content-lg;
 	color: $color-text-light;
 	max-width: 920px;
+	font-size: 30px;
+	color: #274D6D;
+	font-weight: 500;
+	opacity: 0.9;
 	.text-disperse-char {
 		display: inline;
 	}
 
 	@media (max-width: $bp-medium) {
-		color: $color-text-mobile-light;
+		color: #274D6D;
 	}
 
 }

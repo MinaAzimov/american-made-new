@@ -37,17 +37,41 @@
 }
 
 
+.home-date-tom {
+	@include font-style-h1-tom;
+	color: #274D6D;
+	font-family: $font-title;
+	font-size: 43px;
+	text-align: center;
+	@media (max-width: $bp-small) {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+}
 
 
+.home-date-based {
+	@include font-style-h1;
+	color: #274D6D;
+	font-family: $font-title;
+	font-size: 38px;
+	text-align: center;
+	margin-bottom: 5px;
+	@media (max-width: $bp-small) {
+		font-size: 25px;
+		margin-bottom: 10px;
+		
+	}
+}
 
 .home-title {
-	color: #18304D;
-	font-family: $font-title;
-	@include font-style-h1;
-	font-size: 80px;
+	color: #8A1C12;
+	font-family: 'American Made Logotype';
+	
+	font-size: 100px;
 	letter-spacing: 2px;
 	text-align: center;
-	margin-bottom: 26px;
+	margin-bottom: 2px;
 	@media (max-width: 900px) {
 		font-size: 60px;
 		margin-bottom: 15px;
@@ -57,10 +81,13 @@
 		margin-bottom: 10px;
 	}
 
+	
+	
+
 }
 
 .home-date {
-	color: #18304D;
+	color: #274D6D;
 	font-family: $font-title;
 	@include font-style-h1;
 	font-size: 28px;
@@ -100,23 +127,25 @@
 .home-separator {
 	width: 1px;
 	height: 0px;
-	background: $color-border;
-	margin: 0 auto 40px auto;
+	background: #274D6D;
+	margin: 0 auto 20px auto;
 	transition: height 1s 3s linear;
 	.home--entered & {
-		height: 90px;	
+		margin-top: 30px;
+		height: 50px;
+
 	}
 }
 
 .home-arrow {
 	margin: 0px auto;
-	border: 1px solid $color-border;
+	border: 1px solid #274D6D;
 	width: 30px;
 	height: 30px;
 	text-align: center;
 	line-height: 20px;
 	border-radius: 50%;
-	color: $color-border;
+	color: #274D6D;
 	position: relative;
 	z-index: 300;
 	opacity: 0;
@@ -131,7 +160,7 @@
 	}
 
 	.home--entered & {
-		opacity: 1;
+		opacity: 0.7;
 		transform: scale(1) translateY(0px);
 	}
 

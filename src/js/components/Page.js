@@ -98,7 +98,7 @@ class Page extends Component {
 			
 		})
 		this.refs.vidRef.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*'); 
-		this.refs.vidRef1.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*'); 
+		this.refs.vidRef1.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*'); 
 	}
 
 	close = () => {
@@ -117,6 +117,21 @@ class Page extends Component {
 
 	pause = () => {
 		this.refs.vidRef.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*'); 
+	}
+
+
+	mute = () => {
+
+
+		this.refs.vidRef.contentWindow.postMessage('{"event":"command","func":"' + 'mute' + '","args":""}', '*');
+		
+	}
+
+	unmute = () => {
+
+
+		this.refs.vidRef.contentWindow.postMessage('{"event":"command","func":"' + 'unMute' + '","args":""}', '*');
+		console.log(this.refs);
 	}
 
 
@@ -207,8 +222,14 @@ class Page extends Component {
 					(breakpoint !== "small" && url === "/")   ? 
 						<div className="alex-wrapper">
         				<div className={classes} onClick={this.open}>
-						 <button >Click me</button>
-                        <iframe  ref="vidRef1" src="//www.youtube.com/embed/vIu85WQTPRc?rel=0&enablejsapi=1&playsinline=1&autoplay=1&showinfo=0&autohide=1&controls=0&modestbranding=1&iv_load_policy=3&enablejsapi=1&vol=0"  frameBorder="0" allowFullScreen></iframe>  
+        				<div id="trailer-label"><h1>Watch Trailer</h1></div>
+						 <button>Click me</button>
+        
+
+                        <video ref="vidRef1" autoPlay loop allowFullScreen>
+                        <source src="../assets/video/video1.mp4" />
+               
+                        </video>
 
                         </div>
 
@@ -216,7 +237,8 @@ class Page extends Component {
                         <button className={classes1}  id="closeButton" onClick={this.close}></button>
                         <button  className={classes1} id="playButton" onClick={this.play}></button>
                         <button  className={classes1} id="stopButton" onClick={this.pause}></button>
-                    	<button  className={classes1} id="muteButton"></button>
+                    	<button  className={classes1} id="muteButton" onClick={this.mute}></button>
+                    	<button  className={classes1} id="unmuteButton" onClick={this.unmute}></button>
                         <iframe ref="vidRef" className={classes1} src="//www.youtube.com/embed/vIu85WQTPRc?enablejsapi=1&version=3&playerapiid=ytplayer&rel=0&playsinline=1&autoplay=0&showinfo=0&autohide=1&controls=0&modestbranding=1&vol=0"  frameBorder="0"
                         allowFullScreen></iframe> 
                         </div>

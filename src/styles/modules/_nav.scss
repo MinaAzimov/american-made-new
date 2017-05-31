@@ -16,23 +16,48 @@
  .nav-list a.nav-link-active {
 
 .label {
-  border-radius: 10px;
+ 
+  background-color: #274D6D;
+  .page--trailer & {
+   
+    background-color: white;
+  }
 }
 
 .label1 {
-  border-radius: 10px;
+  
+  background-color: #274D6D;
+  .page--trailer & {
+   
+    background-color: white;
+  }
 }
 
 .label2 {
-  border-radius: 10px;
+  
+   background-color: #274D6D;
+   .page--trailer & {
+   
+    background-color: white;
+  }
 }
 
 .label3 {
-  border-radius: 10px;
+  
+   background-color: #274D6D;
+   .page--trailer & {
+   
+    background-color: white;
+  }
 }
 
 .label4 {
-  border-radius: 10px;
+ 
+   background-color: #274D6D;
+   .page--trailer & {
+   
+    background-color: white;
+  }
 }
 
 p.label.success.new-label span {
@@ -66,11 +91,11 @@ opacity: 0.5;
     padding: 1px 3px 2px;
     font-size: 11px;
     margin-left: 0px;
-    color: #FFFBEE ;
+    color: #274D6D;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: transparent;
-    border: 1px solid #666;
+    border: 1px solid #274D6D;
     width: 10px;
     height: 10px;
     margin-left: 0px;
@@ -156,7 +181,7 @@ opacity: 0.5;
 
    
 .label.success span  {
-    color: #18304D; 
+    color: #274D6D;
     opacity: 1;
     margin-left: 20px;
         .page--trailer & {
@@ -166,7 +191,7 @@ opacity: 0.5;
       }
 
       .label1.success1 span{
-    color: #18304D; 
+    color: #274D6D; 
     opacity: 1;
     margin-left: 15px;
     margin-left: 20px;
@@ -181,7 +206,7 @@ opacity: 0.5;
 
 
       .label2.success2 span{
-    color: #18304D; 
+    color: #274D6D;
     opacity: 1;
    margin-left: 15px;
    margin-left: 20px;
@@ -194,7 +219,7 @@ opacity: 0.5;
     
 
       .label3.success3 span{
-    color: #18304D; 
+    color: #274D6D; 
     opacity: 1;
    margin-left: 15px;
    margin-left: 20px;
@@ -206,7 +231,7 @@ opacity: 0.5;
       }
 
       .label4.success4 span {
-    color: #18304D; 
+    color: #274D6D;
     opacity: 1;
     margin-left: 15px;
     margin-left: 20px;
@@ -225,8 +250,8 @@ opacity: 0.5;
 	opacity: 0.5;
     padding: 1px 3px 2px;
     font-size: 11px;
-    border: 1px solid #666;
-    color: #FFFBEE ;
+    border: 1px solid #274D6D;
+    color: #274D6D;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: transparent;
@@ -249,8 +274,8 @@ opacity: 0.5;
 	opacity: 0.5;
     padding: 1px 3px 2px;
     font-size: 11px;
-    border: 1px solid #666;
-    color: #FFFBEE ;
+    border: 1px solid #274D6D;
+    color: #274D6D;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: transparent;
@@ -270,8 +295,8 @@ opacity: 0.5;
 	opacity: 0.5;
     padding: 1px 3px 2px;
     font-size: 11px;
-    border: 1px solid #666;
-    color: #FFFBEE ;
+    border: 1px solid #274D6D;
+    color: #274D6D;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: transparent;
@@ -289,8 +314,8 @@ opacity: 0.5;
 	opacity: 0.5;
     padding: 1px 3px 2px;
     font-size: 11px;
-    border: 1px solid #666;
-    color: #FFFBEE ;
+    border: 1px solid #274D6D;
+    color: #274D6D;
     text-transform: uppercase;
     white-space: nowrap;
     background-color: transparent;
@@ -369,7 +394,7 @@ a:hover p.new-label4:after{
 		&:hover {
 
         span {
-        background: #666;
+        background: #274D6D;
       }
 
 			
@@ -385,6 +410,8 @@ a:hover p.new-label4:after{
       background: $color-border;
       opacity: 0;
       transition: opacity 0.5s;
+
+
     }
 
 		
@@ -392,7 +419,7 @@ a:hover p.new-label4:after{
 
 		span {
 			position: absolute;
-			background: $color-text;		
+			background: #274D6D;		
 			display: block;	
       opacity: 0;
 
@@ -518,7 +545,8 @@ a:hover p.new-label4:after{
 		position: absolute;
 		right: 0px;
 		height: 3px;
-		background: $color-text-medium;
+		background: #274D6D;
+    opacity: 0.7;
 		display: block;
 	}
 

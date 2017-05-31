@@ -47,7 +47,7 @@ componentDidMount() {
 									className="text-effect-spitfire" 
 									isActive={animationStep==="intro-start"} 
 									isRandom={false}
-									text="American Made"
+									text="AMERICAN MADE"
 								/>
 							</div>
 			

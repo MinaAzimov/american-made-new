@@ -63,6 +63,19 @@ export default class Home extends Component {
 				<div className="main-content__wrapper">
 					<div className="main-content">
 						<div className="home-content">
+
+						    <div className="home-date-tom">
+								<TextDisperse 
+									duration={1.2} 
+									delay={1.8}
+									className="text-effect-blur" 
+									id="toms-name"
+									isActive={animationStep==="intro-start"} 
+									isRandom={false}
+									text="TOM CRUISE" 
+								/>
+								</div>	
+
 							<div className="home-title">
 
 								{/*<TextDisperse 
@@ -74,9 +87,20 @@ export default class Home extends Component {
 
 								/> */}
 								   
-								<span className="text">AMERICAN MADE</span>
+								<span className="text">AMERICAN MAD&</span>
 							{/*<TextDisperse duration={2} className="text-effect-blur-ring" isActive={animationStep==="intro-start"} text="American Made"/>  */}
 							</div>
+
+							<div className="home-date-based">
+								<TextDisperse 
+									duration={1.2} 
+									delay={1.8}
+									className="text-effect-blur" 
+									isActive={animationStep==="intro-start"} 
+									isRandom={false}
+									text="BASED ON A TRUE LIE" 
+								/>
+								</div>
 							<div className="home-date">
 								<TextDisperse 
 									duration={1.2} 

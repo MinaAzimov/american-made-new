@@ -23,6 +23,13 @@ $font-title: garamond-premier-pro, 'serif';
 	line-height: 1.3;
 }
 
+@mixin font-style-h1-tom {
+	font-family: $font-title;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
 @mixin font-style-content-lg {
 	font-family: $font-main;
 	font-size: 40px;
@@ -57,3 +64,4 @@ $font-title: garamond-premier-pro, 'serif';
 	font-weight: 500;
 	line-height: 1.3;
 }
+

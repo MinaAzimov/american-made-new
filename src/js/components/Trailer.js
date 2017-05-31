@@ -41,13 +41,10 @@ export default class Trailer extends Component {
 					
 								<div className="trailer-content">
 
-			<video className="video-frame" loop autoPlay>
-                <source src="../assets/video/video.mp4"/>
-               
-             
-            </video>
+			 <iframe className="video-frame" src="//www.youtube.com/embed/vIu85WQTPRc?enablejsapi=1&version=3&playerapiid=ytplayer&rel=0&playsinline=1&autoplay=1&showinfo=0&autohide=1&controls=0&modestbranding=1&vol=0"  frameBorder="0"
+                        allowFullScreen></iframe> 
 
-            <video className="video-frame-countdown" loop autoPlay allowFullScreen>
+            <video className="video-frame-countdown" autoPlay allowFullScreen>
                 <source src="../assets/video/count.mp4"/>
                
            </video>
