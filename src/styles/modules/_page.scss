@@ -272,8 +272,8 @@ height: 100%;
     
                    border: 5px solid white;
                     padding-top: -30%;
-                    height: 9vh;
-                    width: 23vh;
+                    height: 150px;
+                    width: 300px;
                     object-fit: fill;  
                    
                     }     
@@ -281,7 +281,7 @@ height: 100%;
 
                 #trailer-label  {
         left: 6px;
-        width: 96.5%;
+        width: 95.5%;
         bottom: 3.5px;
 }
             }
@@ -295,10 +295,10 @@ height: 100%;
       #trailer-label {
   position: absolute;
   
-  bottom: 2px;
+  bottom: 3px;
   left: 3.8px;
   right: 5px;
-  width: 98.0%;
+  width: 97.5%;
   background-color: rgba(0,0,0,.5);
   z-index: 2;
   color: #fffeed;
@@ -323,8 +323,8 @@ height: 100%;
             video {
                     border: 3px solid white;
                     padding-top: -30%;
-                    height: 9vh;
-                    width: 23vh;
+                    height: 150px;
+                    width: 300px;
                     object-fit: fill;  
                    
             }

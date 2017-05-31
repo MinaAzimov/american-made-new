@@ -39,6 +39,7 @@
 
 .home-date-tom {
 	@include font-style-h1-tom;
+	margin-bottom: 25px;
 	color: #274D6D;
 	font-family: $font-title;
 	font-size: 43px;
@@ -67,11 +68,10 @@
 .home-title {
 	color: #8A1C12;
 	font-family: 'American Made Logotype';
-	
 	font-size: 100px;
 	letter-spacing: 2px;
 	text-align: center;
-	margin-bottom: 2px;
+	margin-bottom: 25px;
 	@media (max-width: 900px) {
 		font-size: 60px;
 		margin-bottom: 15px;
@@ -92,6 +92,8 @@
 	@include font-style-h1;
 	font-size: 28px;
 	text-align: center;
+	margin-top: 10px;
+
 	@media (max-width: $bp-small) {
 		font-size: 20px;
 		margin-bottom: 10px;
